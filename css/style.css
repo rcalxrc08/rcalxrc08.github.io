@@ -1,26 +1,19 @@
 :root {
-    --bg: #fbfaf8;
-    --surface: #ffffff;
-    --text: #1f2328;
-    --muted: #5b6470;
-    --border: #e6e3de;
-    --link: #2f6fb3;
-    --shadow: 0 1px 2px rgba(20, 20, 20, .04), 0 8px 24px rgba(20, 20, 20, .06);
+    /* Dark Quant: the site is dark only */
+    --bg: #0b1020;
+    --surface: #151b2e;
+    --text: #f5f7fa;
+    --muted: #a0aec0;
+    --border: #252d47;
+    --primary: #4f8cff;
+    --secondary: #00d4aa;
+    --accent: #ffb84d;
+    --link: var(--primary);
+    --shadow: 0 1px 2px rgba(0, 0, 0, .35), 0 10px 30px rgba(0, 0, 0, .3);
     --radius: 14px;
     --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     --mono: ui-monospace, "Cascadia Code", "JetBrains Mono", Consolas, monospace;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg: #111316;
-        --surface: #181b20;
-        --text: #e6e8eb;
-        --muted: #9aa3ad;
-        --border: #2a2f36;
-        --link: #7fb2ec;
-        --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
-    }
+    color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
@@ -77,6 +70,11 @@ a:hover { text-decoration: underline; }
 
 .roles b { color: var(--text); font-weight: 600; }
 
+/* each role in the colour of its circle in the mark */
+.roles b:nth-of-type(1) { color: var(--primary); }
+.roles b:nth-of-type(2) { color: var(--secondary); }
+.roles b:nth-of-type(3) { color: var(--accent); }
+
 .intro {
     max-width: 680px;
     margin: 0 0 28px;
@@ -107,7 +105,7 @@ a:hover { text-decoration: underline; }
 
 .btn:hover {
     text-decoration: none;
-    border-color: var(--muted);
+    border-color: var(--primary);
     transform: translateY(-1px);
 }
 
@@ -146,7 +144,10 @@ a:hover { text-decoration: underline; }
     transition: transform .2s, box-shadow .2s;
 }
 
-.card:hover { transform: translateY(-2px); }
+.card:hover {
+    transform: translateY(-2px);
+    border-color: color-mix(in srgb, var(--primary) 45%, var(--border));
+}
 
 .card-head {
     display: flex;
@@ -211,8 +212,9 @@ a:hover { text-decoration: underline; }
     margin: 0;
     padding: 2px 10px;
     font-size: .8rem;
-    color: var(--muted);
-    border: 1px solid var(--border);
+    color: var(--secondary);
+    background: color-mix(in srgb, var(--secondary) 8%, transparent);
+    border: 1px solid color-mix(in srgb, var(--secondary) 30%, var(--border));
     border-radius: 999px;
 }
 
