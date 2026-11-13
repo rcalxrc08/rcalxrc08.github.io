@@ -17,8 +17,7 @@
         <div class="wrap">
             <a class="brand" href="#top">rcalxrc08</a>
             <nav>
-                <a href="#ecosystem">Ecosystem</a>
-                <a href="#projects">Projects</a>
+                                <a href="#projects">Projects</a>
                 <a href="#research">Research</a>
                 <a href="https://github.com/rcalxrc08">GitHub</a>
             </nav>
@@ -54,7 +53,7 @@
                 </g>
             </svg>
                     <p class="eyebrow"><b>Mathematical Engineer</b> · <b>Quant</b> · <b>Climber</b></p>
-                    <h1>Differentiable quantitative finance, <span>in Julia</span></h1>
+                    <h1>rcalxrc08</h1>
                     <p class="lede">Hi! I work as a quant, which mostly means pricing derivatives, computing their
                         sensitivities and making the numbers come out fast and right. In my spare time I write open
                         source <a href="https://julialang.org/">Julia</a> packages around the same topics: <b>option
@@ -67,46 +66,21 @@
                     </nav>
                 </div>
                 <figure class="hero-figure">
-                    <img src="https://rcalxrc08.github.io/FinancialCalibrator.jl/assets/figures/hero-surface-dark.svg" alt="Implied volatility surface of a Heston model calibrated to the DAX, with the market quotes as dots">
-                    <figcaption>A Heston model calibrated to the DAX surface, computed by FinancialCalibrator.jl.</figcaption>
+                    <img src="img/ridges.svg" alt="Mountain ridges drawn from Brownian paths, with a climbing route to the summit">
+                    <figcaption>Ridges drawn from Brownian paths, and a route to the top.</figcaption>
                 </figure>
             </div>
-            <div class="wrap">
-                <div class="stats">
-                    <div class="stat"><div class="stat-value">6</div><div class="stat-label">Julia packages, one ecosystem: closed forms, simulation, Fourier, Greeks, calibration, arrays</div></div>
-                    <div class="stat"><div class="stat-value">9</div><div class="stat-label">automatic differentiation backends tested, from DualNumbers to Enzyme</div></div>
-                    <div class="stat"><div class="stat-value">2</div><div class="stat-label">original results: Vibrato Saltando and the Spectral Theorem</div></div>
-                    <div class="stat"><div class="stat-value">CPU · GPU</div><div class="stat-label">the same code, generic in the number type, on threads or CUDA</div></div>
-                </div>
-            </div>
-        </section>
-
-        <section id="ecosystem">
-            <div class="wrap">
-                <p class="section-k">01</p>
-                <h2>One ecosystem</h2>
-                <p class="section-lead">The pricing packages share one interface, <code>pricer(model, curve, method, payoff)</code>,
-                    and are <em>generic in the number type</em>: prices, Greeks and calibrations are differentiable end to end.</p>
-                <div class="flow">
-                    <ol>
-                        <li><span class="k">01</span><b><a href="https://rcalxrc08.github.io/FinancialToolbox.jl/">FinancialToolbox.jl</a></b><span>closed forms and implied volatility: the references</span></li>
-                        <li class="core"><span class="k">02</span><b><a href="https://rcalxrc08.github.io/FinancialMonteCarlo.jl/">FinancialMonteCarlo.jl</a></b><span>models, payoffs, the <code>pricer</code> interface, simulation</span></li>
-                        <li><span class="k">03</span><b><a href="https://rcalxrc08.github.io/FinancialFFT.jl/">FinancialFFT.jl</a> · <a href="https://rcalxrc08.github.io/VibratoMonteCarlo.jl/">VibratoMonteCarlo.jl</a></b><span>Fourier methods and smooth Monte Carlo Greeks</span></li>
-                        <li class="out"><span class="k">04</span><b><a href="https://rcalxrc08.github.io/FinancialCalibrator.jl/">FinancialCalibrator.jl</a></b><span>calibration to the market, differentiable in the quotes</span></li>
-                    </ol>
-                    <p class="side"><b>Underneath:</b> FinancialFFT.jl and VibratoMonteCarlo.jl depend on <a href="https://rcalxrc08.github.io/PatternVectors.jl/">PatternVectors.jl</a>, structured vectors stored as patterns, O(1) in memory and ready for GPU kernels.</p>
-                </div>
             </div>
         </section>
 
         <section id="projects">
             <div class="wrap">
-                <p class="section-k">02</p>
+                <p class="section-k">01</p>
                 <h2>Open source projects</h2>
                 <p class="section-lead">Each figure is computed by the package itself when its documentation is built.</p>
                 <div class="grid">
                 <article class="card">
-                    <a class="card-figure" href="https://rcalxrc08.github.io/FinancialToolbox.jl/"><img src="https://rcalxrc08.github.io/FinancialToolbox.jl/assets/figures/hero-surface-dark.svg" alt="Gamma surface of a European option" loading="lazy"></a>
+                    <a class="card-figure" href="https://rcalxrc08.github.io/FinancialToolbox.jl/"><img src="https://rcalxrc08.github.io/FinancialToolbox.jl/assets/figures/hero-fractal-dark.svg" alt="The hero figure of the documentation of FinancialToolbox.jl" loading="lazy"></a>
                     <div class="card-body">
                         <div class="card-head">
                             <img src="https://raw.githubusercontent.com/rcalxrc08/FinancialToolbox.jl/HEAD/etc/logo.png" alt="" width="40" height="40" loading="lazy">
@@ -125,7 +99,7 @@
                     </div>
                 </article>
                 <article class="card">
-                    <a class="card-figure" href="https://rcalxrc08.github.io/FinancialMonteCarlo.jl/"><img src="https://rcalxrc08.github.io/FinancialMonteCarlo.jl/assets/figures/hero-surface-dark.svg" alt="Density of the Heston log-return over time" loading="lazy"></a>
+                    <a class="card-figure" href="https://rcalxrc08.github.io/FinancialMonteCarlo.jl/"><img src="https://rcalxrc08.github.io/FinancialMonteCarlo.jl/assets/figures/hero-paths-dark.svg" alt="The hero figure of the documentation of FinancialMonteCarlo.jl" loading="lazy"></a>
                     <div class="card-body">
                         <div class="card-head">
                             <img src="https://raw.githubusercontent.com/rcalxrc08/FinancialMonteCarlo.jl/HEAD/etc/logo.png" alt="" width="40" height="40" loading="lazy">
@@ -144,7 +118,7 @@
                     </div>
                 </article>
                 <article class="card">
-                    <a class="card-figure" href="https://rcalxrc08.github.io/FinancialFFT.jl/"><img src="https://rcalxrc08.github.io/FinancialFFT.jl/assets/figures/hero-surface-dark.svg" alt="Heston implied volatility surface by the COS method" loading="lazy"></a>
+                    <a class="card-figure" href="https://rcalxrc08.github.io/FinancialFFT.jl/"><img src="https://rcalxrc08.github.io/FinancialFFT.jl/assets/figures/hero-densities-dark.svg" alt="The hero figure of the documentation of FinancialFFT.jl" loading="lazy"></a>
                     <div class="card-body">
                         <div class="card-head">
                             <img src="https://raw.githubusercontent.com/rcalxrc08/FinancialFFT.jl/HEAD/etc/logo.png" alt="" width="40" height="40" loading="lazy">
@@ -163,7 +137,7 @@
                     </div>
                 </article>
                 <article class="card">
-                    <a class="card-figure" href="https://rcalxrc08.github.io/VibratoMonteCarlo.jl/"><img src="https://rcalxrc08.github.io/VibratoMonteCarlo.jl/assets/figures/hero-surface-dark.svg" alt="Gamma of a binary call, with Vibrato estimates" loading="lazy"></a>
+                    <a class="card-figure" href="https://rcalxrc08.github.io/VibratoMonteCarlo.jl/"><img src="https://rcalxrc08.github.io/VibratoMonteCarlo.jl/assets/figures/hero-gamma-dark.svg" alt="The hero figure of the documentation of VibratoMonteCarlo.jl" loading="lazy"></a>
                     <div class="card-body">
                         <div class="card-head">
                             <img src="https://raw.githubusercontent.com/rcalxrc08/VibratoMonteCarlo.jl/HEAD/etc/logo.png" alt="" width="40" height="40" loading="lazy">
@@ -225,7 +199,7 @@
 
         <section id="research">
             <div class="wrap">
-                <p class="section-k">03</p>
+                <p class="section-k">02</p>
                 <h2>Original research</h2>
                 <p class="section-lead">Two results in these packages are my own work.</p>
                 <div class="research">
