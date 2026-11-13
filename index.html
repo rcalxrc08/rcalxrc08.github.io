@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="FVEFrtyMEkm_djcN6i1kMz9SeX-92yXSVGYioZeAa2s" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>rcalxrc08 · quant, engineer, climber</title>
     <meta name="description" content="rcalxrc08: mathematical engineer and quant. Open source Julia packages for option pricing, Monte Carlo, Fourier methods, calibration and automatic differentiation.">
     <meta name="theme-color" content="#0b1020">
@@ -13,9 +13,23 @@
 </head>
 
 <body>
-    <header class="hero">
+    <header class="topbar">
         <div class="wrap">
-            <svg class="mark" viewBox="0 0 172 56" aria-hidden="true">
+            <a class="brand" href="#top">rcalxrc08</a>
+            <nav>
+                <a href="#ecosystem">Ecosystem</a>
+                <a href="#projects">Projects</a>
+                <a href="#research">Research</a>
+                <a href="https://github.com/rcalxrc08">GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <div class="wrap hero-grid">
+                <div>
+                    <svg class="mark" viewBox="0 0 172 56" aria-hidden="true">
                 <g fill="none" stroke="#0b1020" stroke-linecap="round" stroke-linejoin="round">
                     <!-- Mathematical engineer: integral sign -->
                     <g transform="translate(28 28)">
@@ -39,178 +53,187 @@
                     </g>
                 </g>
             </svg>
-            <h1>rcalxrc08</h1>
-            <p class="roles"><b>Mathematical Engineer</b> · <b>Quant</b> · <b>Climber</b></p>
-
-            <div class="intro">
-                <p>Hi! I work as a quant, which mostly means pricing derivatives, computing their sensitivities and
-                    making the numbers come out fast and right. In my spare time I write open source
-                    <a href="https://julialang.org/">Julia</a> packages around the same topics: option pricing,
-                    Monte Carlo, Fourier methods, calibration and automatic differentiation.</p>
-                <p>When I'm away from the keyboard I'm usually climbing.</p>
+                    <p class="eyebrow"><b>Mathematical Engineer</b> · <b>Quant</b> · <b>Climber</b></p>
+                    <h1>Differentiable quantitative finance, <span>in Julia</span></h1>
+                    <p class="lede">Hi! I work as a quant, which mostly means pricing derivatives, computing their
+                        sensitivities and making the numbers come out fast and right. In my spare time I write open
+                        source <a href="https://julialang.org/">Julia</a> packages around the same topics: <b>option
+                        pricing, Monte Carlo, Fourier methods, calibration and automatic differentiation</b>.</p>
+                    <p class="lede">When I'm away from the keyboard I'm usually climbing.</p>
+                    <nav class="cta">
+                        <a class="btn btn-primary" href="#projects">Explore the packages <span aria-hidden="true">→</span></a>
+                        <a class="btn" href="https://github.com/rcalxrc08"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> GitHub</a>
+                        <a class="btn" href="https://gitlab.com/rcalxrc08">GitLab</a>
+                    </nav>
+                </div>
+                <figure class="hero-figure">
+                    <img src="https://rcalxrc08.github.io/FinancialCalibrator.jl/assets/figures/hero-surface-dark.svg" alt="Implied volatility surface of a Heston model calibrated to the DAX, with the market quotes as dots">
+                    <figcaption>A Heston model calibrated to the DAX surface, computed by FinancialCalibrator.jl.</figcaption>
+                </figure>
             </div>
-
-            <nav class="links">
-                <a class="btn" href="https://github.com/rcalxrc08">
-                    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-                    GitHub
-                </a>
-                <a class="btn" href="https://gitlab.com/rcalxrc08">GitLab</a>
-                <a class="btn" href="#projects">Projects ↓</a>
-            </nav>
-        </div>
-    </header>
-
-    <main class="projects" id="projects">
-        <div class="wrap">
-            <h2 class="section-title">Open source projects</h2>
-            <p class="section-lead">A small ecosystem of Julia packages for quantitative finance. They are generic in
-                the number type, so they work with automatic differentiation out of the box, and several of them run
-                on GPUs.</p>
-
-            <div class="grid">
-
-                <article class="card">
-                    <div class="card-head">
-                        <img src="https://raw.githubusercontent.com/rcalxrc08/FinancialToolbox.jl/HEAD/etc/logo.png" alt="FinancialToolbox.jl logo" width="64" height="64" loading="lazy">
-                        <div>
-                            <h3><a href="https://github.com/rcalxrc08/FinancialToolbox.jl">FinancialToolbox.jl</a></h3>
-                            <p class="sub">Black &amp; Scholes in closed form</p>
-                        </div>
-                    </div>
-                    <p>Pricing, Greeks and implied volatility under the Black and Black &amp; Scholes models, with the
-                        same syntax as the Matlab Financial Toolbox.</p>
-                    <ul>
-                        <li>Prices and sensitivities: <code>blsprice</code>, <code>blsdelta</code>, <code>blsvega</code>, <code>blsvanna</code>, …</li>
-                        <li>Implied volatility with the 2024 version of Jäckel's <i>Let's Be Rational</i>: machine precision in at most two Householder steps.</li>
-                        <li>Date utilities: <code>yearfrac</code>, <code>daysact</code>, Excel date conversion.</li>
-                        <li>Works with <code>Float32</code>, <code>BigFloat</code> and AD number types.</li>
-                    </ul>
-                    <ul class="tags"><li>Black–Scholes</li><li>Implied vol</li><li>Greeks</li></ul>
-                    <div class="card-links">
-                        <a href="https://github.com/rcalxrc08/FinancialToolbox.jl">Source</a>
-                        <a href="https://rcalxrc08.github.io/FinancialToolbox.jl/">Documentation</a>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <div class="card-head">
-                        <img src="https://raw.githubusercontent.com/rcalxrc08/FinancialMonteCarlo.jl/HEAD/etc/logo.png" alt="FinancialMonteCarlo.jl logo" width="64" height="64" loading="lazy">
-                        <div>
-                            <h3><a href="https://github.com/rcalxrc08/FinancialMonteCarlo.jl">FinancialMonteCarlo.jl</a></h3>
-                            <p class="sub">Monte Carlo pricing for equity derivatives</p>
-                        </div>
-                    </div>
-                    <p>Pricing and risk management of equity products by Monte Carlo simulation, from vanillas to
-                        early-exercise options.</p>
-                    <ul>
-                        <li><b>Models:</b> Black &amp; Scholes, Heston, Kou, Merton, NIG, Variance Gamma, (shifted) lognormal mixtures; multivariate via Gaussian copula.</li>
-                        <li><b>Payoffs:</b> European, barrier, Asian, Bermudan and American (Longstaff–Schwartz).</li>
-                        <li>Term structures of rates and dividends; pricing straight from an SDE via DifferentialEquations.jl.</li>
-                        <li>Threads, processes and CUDA; sensitivities through ForwardDiff, ReverseDiff, DualNumbers, TaylorSeries.</li>
-                    </ul>
-                    <ul class="tags"><li>Monte Carlo</li><li>Lévy processes</li><li>GPU</li></ul>
-                    <div class="card-links">
-                        <a href="https://github.com/rcalxrc08/FinancialMonteCarlo.jl">Source</a>
-                        <a href="https://rcalxrc08.github.io/FinancialMonteCarlo.jl/">Documentation</a>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <div class="card-head">
-                        <img src="https://raw.githubusercontent.com/rcalxrc08/FinancialFFT.jl/HEAD/etc/logo.png" alt="FinancialFFT.jl logo" width="64" height="64" loading="lazy">
-                        <div>
-                            <h3><a href="https://github.com/rcalxrc08/FinancialFFT.jl">FinancialFFT.jl</a></h3>
-                            <p class="sub">Fourier methods for option pricing</p>
-                        </div>
-                    </div>
-                    <p>Extends FinancialMonteCarlo.jl with Fourier-based pricers that work directly on the
-                        characteristic function of the model.</p>
-                    <ul>
-                        <li><b>Methods:</b> Lewis, COS, Carr–Madan, Carr–Madan–Lewis.</li>
-                        <li>Densities of the log-return via FFT inversion or COS expansion, ready for likelihood-ratio and Vibrato estimators.</li>
-                        <li>European and binary options, single prices or whole smiles.</li>
-                        <li>Differentiable with ForwardDiff, ReverseDiff, Zygote, Mooncake and more; runs on CUDA.</li>
-                    </ul>
-                    <ul class="tags"><li>FFT</li><li>COS method</li><li>Characteristic functions</li></ul>
-                    <div class="card-links">
-                        <a href="https://github.com/rcalxrc08/FinancialFFT.jl">Source</a>
-                        <a href="https://rcalxrc08.github.io/FinancialFFT.jl/">Documentation</a>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <div class="card-head">
-                        <img src="https://raw.githubusercontent.com/rcalxrc08/FinancialCalibrator.jl/HEAD/etc/logo.png" alt="FinancialCalibrator.jl logo" width="64" height="64" loading="lazy">
-                        <div>
-                            <h3><a href="https://github.com/rcalxrc08/FinancialCalibrator.jl">FinancialCalibrator.jl</a></h3>
-                            <p class="sub">Differentiable calibration to volatility surfaces</p>
-                        </div>
-                    </div>
-                    <p>Calibrates the models of FinancialMonteCarlo.jl to an implied volatility surface, with any
-                        pricing method: Fourier, closed form or Monte Carlo.</p>
-                    <ul>
-                        <li><b>Models:</b> Black–Scholes, Merton, Kou, Variance Gamma, NIG, Heston, shifted lognormal mixtures.</li>
-                        <li>Optim.jl search, then a Levenberg–Marquardt polish to a stationary point.</li>
-                        <li>Calibrated parameters differentiable in the quotes through the implicit function theorem, with ForwardDiff, Zygote, Mooncake and Enzyme.</li>
-                        <li>Market data on CUDA, from sample surfaces or CBOE delayed quotes.</li>
-                    </ul>
-                    <ul class="tags"><li>Calibration</li><li>Implicit differentiation</li><li>GPU</li></ul>
-                    <div class="card-links">
-                        <a href="https://github.com/rcalxrc08/FinancialCalibrator.jl">Source</a>
-                        <a href="https://rcalxrc08.github.io/FinancialCalibrator.jl/">Documentation</a>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <div class="card-head">
-                        <img src="https://raw.githubusercontent.com/rcalxrc08/VibratoMonteCarlo.jl/HEAD/etc/logo.png" alt="VibratoMonteCarlo.jl logo" width="64" height="64" loading="lazy">
-                        <div>
-                            <h3><a href="https://github.com/rcalxrc08/VibratoMonteCarlo.jl">VibratoMonteCarlo.jl</a></h3>
-                            <p class="sub">Smooth Monte Carlo Greeks of any order</p>
-                        </div>
-                    </div>
-                    <p>Plain Monte Carlo estimators are not differentiable, which makes automatic differentiation
-                        useless on discontinuous payoffs. This package builds estimators that are
-                        <i>C<sup>∞</sup></i>, so sensitivities of any order come out of AD.</p>
-                    <ul>
-                        <li><b>Estimators:</b> likelihood ratio, Vibrato (for any process, not just Itô), Vibrato <i>saltando</i> for finite-activity Lévy.</li>
-                        <li><b>Integration:</b> numerical, Monte Carlo (standard, antithetic, Sobol), Gauss–Hermite.</li>
-                        <li>European, binary and (WIP) American options on Black &amp; Scholes, Kou, Merton, NIG, VG.</li>
-                    </ul>
-                    <ul class="tags"><li>Greeks</li><li>Vibrato</li><li>Automatic differentiation</li></ul>
-                    <div class="card-links">
-                        <a href="https://github.com/rcalxrc08/VibratoMonteCarlo.jl">Source</a>
-                        <a href="https://rcalxrc08.github.io/VibratoMonteCarlo.jl/">Documentation</a>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <div class="card-head">
-                        <img src="https://raw.githubusercontent.com/rcalxrc08/PatternVectors.jl/HEAD/etc/logo.png" alt="PatternVectors.jl logo" width="64" height="64" loading="lazy">
-                        <div>
-                            <h3><a href="https://github.com/rcalxrc08/PatternVectors.jl">PatternVectors.jl</a></h3>
-                            <p class="sub">Structured vectors, stored as patterns</p>
-                        </div>
-                    </div>
-                    <p>An immutable <code>AbstractVector</code> that stores a few values and the rule for where they
-                        go, instead of every element: think Simpson weights <code>[1, 4, 2, 4, …, 4, 1]</code>,
-                        alternating signs or boundary values on a grid.</p>
-                    <ul>
-                        <li>A tiny <code>isbits</code> object: O(1) memory, ready to be sent to a GPU kernel as is.</li>
-                        <li>Broadcasts evaluate once per distinct value; mixed with dense arrays they fuse into a single pass, on CPU and GPU.</li>
-                        <li>O(1) <code>sum</code> and range indexing.</li>
-                        <li>Differentiable with Zygote, Mooncake and Enzyme, with gradients kept on the pattern values.</li>
-                    </ul>
-                    <ul class="tags"><li>Arrays</li><li>GPU</li><li>Automatic differentiation</li></ul>
-                    <div class="card-links">
-                        <a href="https://github.com/rcalxrc08/PatternVectors.jl">Source</a>
-                        <a href="https://rcalxrc08.github.io/PatternVectors.jl/">Documentation</a>
-                    </div>
-                </article>
-
+            <div class="wrap">
+                <div class="stats">
+                    <div class="stat"><div class="stat-value">6</div><div class="stat-label">Julia packages, one ecosystem: closed forms, simulation, Fourier, Greeks, calibration, arrays</div></div>
+                    <div class="stat"><div class="stat-value">9</div><div class="stat-label">automatic differentiation backends tested, from DualNumbers to Enzyme</div></div>
+                    <div class="stat"><div class="stat-value">2</div><div class="stat-label">original results: Vibrato Saltando and the Spectral Theorem</div></div>
+                    <div class="stat"><div class="stat-value">CPU · GPU</div><div class="stat-label">the same code, generic in the number type, on threads or CUDA</div></div>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section id="ecosystem">
+            <div class="wrap">
+                <p class="section-k">01</p>
+                <h2>One ecosystem</h2>
+                <p class="section-lead">The pricing packages share one interface, <code>pricer(model, curve, method, payoff)</code>,
+                    and are <em>generic in the number type</em>: prices, Greeks and calibrations are differentiable end to end.</p>
+                <div class="flow">
+                    <ol>
+                        <li><span class="k">01</span><b><a href="https://rcalxrc08.github.io/FinancialToolbox.jl/">FinancialToolbox.jl</a></b><span>closed forms and implied volatility: the references</span></li>
+                        <li class="core"><span class="k">02</span><b><a href="https://rcalxrc08.github.io/FinancialMonteCarlo.jl/">FinancialMonteCarlo.jl</a></b><span>models, payoffs, the <code>pricer</code> interface, simulation</span></li>
+                        <li><span class="k">03</span><b><a href="https://rcalxrc08.github.io/FinancialFFT.jl/">FinancialFFT.jl</a> · <a href="https://rcalxrc08.github.io/VibratoMonteCarlo.jl/">VibratoMonteCarlo.jl</a></b><span>Fourier methods and smooth Monte Carlo Greeks</span></li>
+                        <li class="out"><span class="k">04</span><b><a href="https://rcalxrc08.github.io/FinancialCalibrator.jl/">FinancialCalibrator.jl</a></b><span>calibration to the market, differentiable in the quotes</span></li>
+                    </ol>
+                    <p class="side"><b>Underneath:</b> FinancialFFT.jl and VibratoMonteCarlo.jl depend on <a href="https://rcalxrc08.github.io/PatternVectors.jl/">PatternVectors.jl</a>, structured vectors stored as patterns, O(1) in memory and ready for GPU kernels.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="wrap">
+                <p class="section-k">02</p>
+                <h2>Open source projects</h2>
+                <p class="section-lead">Each figure is computed by the package itself when its documentation is built.</p>
+                <div class="grid">
+                <article class="card">
+                    <a class="card-figure" href="https://rcalxrc08.github.io/FinancialToolbox.jl/"><img src="https://rcalxrc08.github.io/FinancialToolbox.jl/assets/figures/hero-surface-dark.svg" alt="Gamma surface of a European option" loading="lazy"></a>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <img src="https://raw.githubusercontent.com/rcalxrc08/FinancialToolbox.jl/HEAD/etc/logo.png" alt="" width="40" height="40" loading="lazy">
+                            <div>
+                                <h3><a href="https://github.com/rcalxrc08/FinancialToolbox.jl">FinancialToolbox.jl</a></h3>
+                                <p class="sub">Black &amp; Scholes in closed form</p>
+                            </div>
+                        </div>
+                        <p>Pricing, Greeks and implied volatility under the Black and Black &amp; Scholes models, with the syntax of the Matlab Financial Toolbox.</p>
+                        <ul class="points"><li><code>blsprice</code>, <code>blsdelta</code>, <code>blsvega</code>, <code>blsvanna</code>, …</li><li>Implied volatility with the 2024 <i>Let's Be Rational</i>: machine precision in at most two Householder steps.</li><li><code>Float32</code>, <code>BigFloat</code>, complex numbers, AD; one GPU kernel per broadcast.</li></ul>
+                        <ul class="tags"><li>Black–Scholes</li><li>Implied vol</li><li>Greeks</li></ul>
+                        <div class="card-links">
+                            <a href="https://rcalxrc08.github.io/FinancialToolbox.jl/">Documentation →</a>
+                            <a href="https://github.com/rcalxrc08/FinancialToolbox.jl">Source</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <a class="card-figure" href="https://rcalxrc08.github.io/FinancialMonteCarlo.jl/"><img src="https://rcalxrc08.github.io/FinancialMonteCarlo.jl/assets/figures/hero-surface-dark.svg" alt="Density of the Heston log-return over time" loading="lazy"></a>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <img src="https://raw.githubusercontent.com/rcalxrc08/FinancialMonteCarlo.jl/HEAD/etc/logo.png" alt="" width="40" height="40" loading="lazy">
+                            <div>
+                                <h3><a href="https://github.com/rcalxrc08/FinancialMonteCarlo.jl">FinancialMonteCarlo.jl</a></h3>
+                                <p class="sub">Monte Carlo pricing for equity derivatives</p>
+                            </div>
+                        </div>
+                        <p>Simulation of Black &amp; Scholes, Heston and Lévy models, and every payoff from forwards to American options.</p>
+                        <ul class="points"><li><b>Models:</b> Black &amp; Scholes, Heston, Kou, Merton, NIG, VG, mixtures; Gaussian copulas.</li><li><b>Payoffs:</b> European, barrier, Asian, Bermudan, American (Longstaff–Schwartz), positions.</li><li>Threads, processes and CUDA; Greeks with seven AD backends.</li></ul>
+                        <ul class="tags"><li>Monte Carlo</li><li>Lévy processes</li><li>GPU</li></ul>
+                        <div class="card-links">
+                            <a href="https://rcalxrc08.github.io/FinancialMonteCarlo.jl/">Documentation →</a>
+                            <a href="https://github.com/rcalxrc08/FinancialMonteCarlo.jl">Source</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <a class="card-figure" href="https://rcalxrc08.github.io/FinancialFFT.jl/"><img src="https://rcalxrc08.github.io/FinancialFFT.jl/assets/figures/hero-surface-dark.svg" alt="Heston implied volatility surface by the COS method" loading="lazy"></a>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <img src="https://raw.githubusercontent.com/rcalxrc08/FinancialFFT.jl/HEAD/etc/logo.png" alt="" width="40" height="40" loading="lazy">
+                            <div>
+                                <h3><a href="https://github.com/rcalxrc08/FinancialFFT.jl">FinancialFFT.jl</a></h3>
+                                <p class="sub">Fourier methods for option pricing</p>
+                            </div>
+                        </div>
+                        <p>Fourier pricers on the characteristic function of the model, for the models and payoffs of FinancialMonteCarlo.jl.</p>
+                        <ul class="points"><li><b>Methods:</b> Lewis, COS, Carr–Madan, Carr–Madan–Lewis.</li><li>Densities of the log-return by FFT inversion or COS expansion.</li><li>Every method differentiable by eight AD backends, and on CUDA.</li></ul>
+                        <ul class="tags"><li>FFT</li><li>COS method</li><li>Characteristic functions</li></ul>
+                        <div class="card-links">
+                            <a href="https://rcalxrc08.github.io/FinancialFFT.jl/">Documentation →</a>
+                            <a href="https://github.com/rcalxrc08/FinancialFFT.jl">Source</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <a class="card-figure" href="https://rcalxrc08.github.io/VibratoMonteCarlo.jl/"><img src="https://rcalxrc08.github.io/VibratoMonteCarlo.jl/assets/figures/hero-surface-dark.svg" alt="Gamma of a binary call, with Vibrato estimates" loading="lazy"></a>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <img src="https://raw.githubusercontent.com/rcalxrc08/VibratoMonteCarlo.jl/HEAD/etc/logo.png" alt="" width="40" height="40" loading="lazy">
+                            <div>
+                                <h3><a href="https://github.com/rcalxrc08/VibratoMonteCarlo.jl">VibratoMonteCarlo.jl</a></h3>
+                                <p class="sub">Smooth Monte Carlo Greeks of any order</p>
+                            </div>
+                        </div>
+                        <p>Estimators that are <i>C<sup>∞</sup></i> in every parameter, so automatic differentiation gives Greeks of any order, even on discontinuous payoffs.</p>
+                        <ul class="points"><li><b>Estimators:</b> likelihood ratio, Vibrato, and the original <b>Vibrato Saltando</b>.</li><li><b>The Spectral Theorem</b> (original): every n-th order Black–Scholes Greek from 2n + 1 prices.</li><li>European, binary and American options on Black &amp; Scholes, Heston and Lévy models.</li></ul>
+                        <ul class="tags"><li>Greeks</li><li>Vibrato</li><li class="original">original research</li></ul>
+                        <div class="card-links">
+                            <a href="https://rcalxrc08.github.io/VibratoMonteCarlo.jl/">Documentation →</a>
+                            <a href="https://github.com/rcalxrc08/VibratoMonteCarlo.jl">Source</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <a class="card-figure" href="https://rcalxrc08.github.io/FinancialCalibrator.jl/"><img src="https://rcalxrc08.github.io/FinancialCalibrator.jl/assets/figures/hero-surface-dark.svg" alt="Heston calibrated to the DAX surface" loading="lazy"></a>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <img src="https://raw.githubusercontent.com/rcalxrc08/FinancialCalibrator.jl/HEAD/etc/logo.png" alt="" width="40" height="40" loading="lazy">
+                            <div>
+                                <h3><a href="https://github.com/rcalxrc08/FinancialCalibrator.jl">FinancialCalibrator.jl</a></h3>
+                                <p class="sub">Differentiable calibration to volatility surfaces</p>
+                            </div>
+                        </div>
+                        <p>Calibrates the models of FinancialMonteCarlo.jl to an implied volatility surface, with any pricing method, and differentiates the result.</p>
+                        <ul class="points"><li>Optim.jl search, then a Levenberg–Marquardt polish to a stationary point.</li><li>Calibrated parameters differentiable in the quotes by the implicit function theorem: ForwardDiff, Zygote, Mooncake, Enzyme.</li><li>CPU or CUDA; a DAX sample surface and CBOE delayed quotes.</li></ul>
+                        <ul class="tags"><li>Calibration</li><li>Implicit differentiation</li><li>GPU</li></ul>
+                        <div class="card-links">
+                            <a href="https://rcalxrc08.github.io/FinancialCalibrator.jl/">Documentation →</a>
+                            <a href="https://github.com/rcalxrc08/FinancialCalibrator.jl">Source</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <a class="card-figure" href="https://rcalxrc08.github.io/PatternVectors.jl/"><img src="https://rcalxrc08.github.io/PatternVectors.jl/assets/figures/hero-patterns-dark.svg" alt="The patterns of PatternVectors.jl" loading="lazy"></a>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <img src="https://raw.githubusercontent.com/rcalxrc08/PatternVectors.jl/HEAD/etc/logo.png" alt="" width="40" height="40" loading="lazy">
+                            <div>
+                                <h3><a href="https://github.com/rcalxrc08/PatternVectors.jl">PatternVectors.jl</a></h3>
+                                <p class="sub">Structured vectors, stored as patterns</p>
+                            </div>
+                        </div>
+                        <p>An immutable <code>AbstractVector</code> that stores a few values and the rule for where they go: Simpson weights, alternating signs, boundary values.</p>
+                        <ul class="points"><li>A tiny <code>isbits</code> object: O(1) memory, ready for a GPU kernel.</li><li>Broadcasts evaluated once per distinct value; fused with dense arrays.</li><li>Gradients on the pattern values with Zygote, Mooncake and Enzyme.</li></ul>
+                        <ul class="tags"><li>Arrays</li><li>GPU</li><li>Automatic differentiation</li></ul>
+                        <div class="card-links">
+                            <a href="https://rcalxrc08.github.io/PatternVectors.jl/">Documentation →</a>
+                            <a href="https://github.com/rcalxrc08/PatternVectors.jl">Source</a>
+                        </div>
+                    </div>
+                </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="research">
+            <div class="wrap">
+                <p class="section-k">03</p>
+                <h2>Original research</h2>
+                <p class="section-lead">Two results in these packages are my own work.</p>
+                <div class="research">
+                    <a href="https://rcalxrc08.github.io/VibratoMonteCarlo.jl/vibrato/#Vibrato-Saltando-Montecarlo"><span class="k">Method · Master Thesis, 2017</span><h3>Vibrato Saltando</h3><p>Condition on the time of the last jump instead of a fixed step: after it the process is a Black–Scholes diffusion, and the inner expectation is known in closed form, for any number of time steps. Extended in VibratoMonteCarlo.jl to Variance Gamma and NIG through the subordinator.</p></a>
+                    <a href="https://rcalxrc08.github.io/VibratoMonteCarlo.jl/spectral/"><span class="k">Theorem · 2024</span><h3>The Spectral Theorem</h3><p>In Black and Scholes every sensitivity of order <i>n</i> of a European option is a combination of the prices of 2<i>n</i> + 1 contracts, with coefficients independent of the payoff. Its dual in frequency space links the likelihood ratio and the Fourier methods.</p></a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
