@@ -6,7 +6,7 @@
     <meta name="google-site-verification" content="FVEFrtyMEkm_djcN6i1kMz9SeX-92yXSVGYioZeAa2s" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>rcalxrc08 · quant, engineer, climber</title>
-    <meta name="description" content="rcalxrc08: mathematical engineer and quant. Open source Julia packages for option pricing, Monte Carlo, Fourier methods and automatic differentiation.">
+    <meta name="description" content="rcalxrc08: mathematical engineer and quant. Open source Julia packages for option pricing, Monte Carlo, Fourier methods, calibration and automatic differentiation.">
     <meta name="theme-color" content="#3b6fb6">
     <link rel="shortcut icon" href="149191.ico">
     <link rel="stylesheet" href="css/style.css">
@@ -46,7 +46,7 @@
                 <p>Hi! I work as a quant, which mostly means pricing derivatives, computing their sensitivities and
                     making the numbers come out fast and right. In my spare time I write open source
                     <a href="https://julialang.org/">Julia</a> packages around the same topics: option pricing,
-                    Monte Carlo, Fourier methods and automatic differentiation.</p>
+                    Monte Carlo, Fourier methods, calibration and automatic differentiation.</p>
                 <p>When I'm away from the keyboard I'm usually climbing.</p>
             </div>
 
@@ -136,6 +136,29 @@
                     <div class="card-links">
                         <a href="https://github.com/rcalxrc08/FinancialFFT.jl">Source</a>
                         <a href="https://rcalxrc08.github.io/FinancialFFT.jl/">Documentation</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-head">
+                        <img src="https://raw.githubusercontent.com/rcalxrc08/FinancialCalibrator.jl/HEAD/etc/logo.png" alt="FinancialCalibrator.jl logo" width="64" height="64" loading="lazy">
+                        <div>
+                            <h3><a href="https://github.com/rcalxrc08/FinancialCalibrator.jl">FinancialCalibrator.jl</a></h3>
+                            <p class="sub">Differentiable calibration to volatility surfaces</p>
+                        </div>
+                    </div>
+                    <p>Calibrates the models of FinancialMonteCarlo.jl to an implied volatility surface, with any
+                        pricing method: Fourier, closed form or Monte Carlo.</p>
+                    <ul>
+                        <li><b>Models:</b> Black–Scholes, Merton, Kou, Variance Gamma, NIG, Heston, shifted lognormal mixtures.</li>
+                        <li>Optim.jl search, then a Levenberg–Marquardt polish to a stationary point.</li>
+                        <li>Calibrated parameters differentiable in the quotes through the implicit function theorem, with ForwardDiff, Zygote, Mooncake and Enzyme.</li>
+                        <li>Market data on CUDA, from sample surfaces or CBOE delayed quotes.</li>
+                    </ul>
+                    <ul class="tags"><li>Calibration</li><li>Implicit differentiation</li><li>GPU</li></ul>
+                    <div class="card-links">
+                        <a href="https://github.com/rcalxrc08/FinancialCalibrator.jl">Source</a>
+                        <a href="https://rcalxrc08.github.io/FinancialCalibrator.jl/">Documentation</a>
                     </div>
                 </article>
 
